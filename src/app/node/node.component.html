@@ -25,3 +25,18 @@
     <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
   </svg>
 </p>
+
+
+<h2>Test graph</h2>
+<svg *ngFor="let node of completedGraph" height="1000" width="1000">
+  <circle [attr.cx]="node.x" [attr.cy]="node.y" r="20" stroke="red" stroke-width="3" fill="white" />
+  <text x="400" y="150" text-anchor="middle" stroke="#51c5cf" stroke-width="2px" dy=".3em">8</text>
+</svg>
+
+<h2>TESTSETES</h2>
+<ul class="heroes">
+  <li *ngFor="let node of completedGraph" >
+    <span class="badge">{{node.id}}</span>
+  </li>
+</ul>
+

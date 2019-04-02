@@ -51,7 +51,7 @@ export class NonEmpty extends IntSet {
     contains(x: number): boolean {
         if(x < this.elem) return this.left.contains(x) 
         if(x > this.elem) return this.right.contains(x) 
-        else true
+        else return true
     }
 }
 
