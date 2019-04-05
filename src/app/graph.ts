@@ -46,6 +46,7 @@ export class NonEmpty extends IntSet {
         //right.y = this.y + 100    
         //return new NonEmpty(this.elem, this.left, right)
         }
+        // TODO: Else case definieren, sonst crasht es bei gleichen Zahlen
     }
 
     contains(x: number): boolean {
